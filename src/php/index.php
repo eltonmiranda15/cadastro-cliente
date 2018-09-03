@@ -7,6 +7,6 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	
+	<?php require_once("formulario.php"); ?>
 </body>
 </html>

@@ -1,55 +1,76 @@
-<div>
-	<form action="" method="get" accept-charset="utf-8">
+<div class="a border">
+	
+		<form action="" method="get" accept-charset="utf-8">
+			<p><strong>Area do curso</strong></p>
+				<label>
+				Nome do curso:
+				<br>
+				<input type="text/submit/hidden/button/etc" class="form-control" name="" value="">
+
+			</label>			
 		
-		<label>
-			Nome do curso:
-			<input type="text/submit/hidden/button/etc" name="" value="">
+			<label>
+				Nível de dificuldade:
+				<br>
+				<input type="text/submit/hidden/button/etc" class="form-control" name="" value="">
 
-		</label>
-		<label>
-			Nível de dificuldade:
-			<input type="text/submit/hidden/button/etc" name="" value="">
+			</label>
+		
+			<label>
+				Descrição:
+				<br>
+				<input type="text/submit/hidden/button/etc" class="form-control" name="" value="">
 
-		</label>
-		<label>
-			Descrição:
-			<input type="text/submit/hidden/button/etc" name="" value="">
+			</label>
+			<br>
+			<label>
+				Projetos baseados no curso:
+				<br>
+				<input type="text/submit/hidden/button/etc" class="form-control" name="" value="">
 
-		</label>
-		<label>
-			Projetos baseados no curso:
-			<input type="text/submit/hidden/button/etc" name="" value="">
+			</label>
+			
+			<label>
+				Projeto finalizado:
+				<br>
+				<input type="text/submit/hidden/button/etc" class="form-control" name="" value="">
 
-		</label>
-		<label>
-			Projeto finalizado:
-			<input type="text/submit/hidden/button/etc" name="" value="">
+			</label>
+			<br>
+			<label>
+				Projeto em andamento:
+				<br>
+				<input type="text/submit/hidden/button/etc"  class="form-control" name="" value="">
 
-		</label>
-		<label>
-			Projeto em andamento:
-			<input type="text/submit/hidden/button/etc" name="" value="">
+			</label>
+			
+			<label>
+				Projeto concluido:
+				<br>
+				<input type="text/submit/hidden/button/etc"  class="form-control" name="" value="">
 
-		</label>
-		<label>
-			Projeto concluido:
-			<input type="text/submit/hidden/button/etc" name="" value="">
+			</label>
+			<br>
+			<label>
+				Data e hora de inicio:
+				<br>
+				<input type="text/submit/hidden/button/etc"  class="form-control" name="" value="">
 
-		</label>
-		<label>
-			Data e hora de inicio:
-			<input type="text/submit/hidden/button/etc" name="" value="">
+			</label>
+		
+			<label>
+				Data e hora de finalização: 
+				<br>
+				<input type="text/submit/hidden/button/etc"  class="form-control" name="" value="">
 
-		</label>
-		<label>
-			Data e hora de finalização: 
-			<input type="text/submit/hidden/button/etc" name="" value="">
+			</label>
+		
+			<br>
+			<button type="submit" class="btn btn-primary">Enviar</button>
 
-		</label>
-
-		<button type="submit"></button>
-
-	</form>
+		</form>
 	
 	<!-- Assim que enviar os dados será necessario envia-los para uma tabelinha para o controle-curso-->
+	</div>
 </div>
+

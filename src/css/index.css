@@ -1,12 +1,72 @@
+body {
+  background-color: #180e0c;
+}
+
 .a {
-  display: flex;
-  -webkit-flex-flow: row wrap;
   padding: 10px;
-  background-color: #ebebeba3;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -670px;
+  color: white;
+}
+
+.b {
+  color: black;
 }
 
 p > strong {
   font-size: 30px;
+}
+
+.background-image-um {
+  background: url(../img/6.jpeg) no-repeat;
+  column-count: 2;
+  column-gap: 0px;
+  padding: 123px;
+}
+
+.paragrafo {
+  color: white;
+}
+
+.img-fluid {
+  opacity: 0.4;
+}
+
+.input {
+  width: 350px;
+}
+
+.botao-curso {
+  width: 232.3px;
+}
+
+.botao-cliente {
+  width: 114px;
+}
+
+.textarea {
+  width: 703px;
+}
+
+label {
+  text-shadow: 0px 0.5px 0.5px;
+}
+
+.bg {
+  background-color: #00000075;
+  border-radius: 80px 0px 80px 0px;
+  padding-bottom: 15px;
+}
+
+.titulo {
+  padding: 60px 0px 0px 80px;
+  color: white;
+}
+
+.botao-inicial {
+  position: relative;
+  left: 100px;
 }
 
 /*# sourceMappingURL=index.css.map */

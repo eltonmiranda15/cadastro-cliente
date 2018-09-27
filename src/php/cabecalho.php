@@ -15,6 +15,7 @@ $con2 = $conexao->query($consulta2) or die ($conexao->error);
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<script type="text/javascript" src="../js/jquery.js"></script>
 
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<title>Cadastro clientes</title>

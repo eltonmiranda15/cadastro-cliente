@@ -1,38 +1,48 @@
 <?php require_once("cabecalho.php"); ?>
 <div class="container">
-	<div class="a border">
+	<picture>
+  <source srcset="../img/6.jpeg" type="image/svg+xml">
+  <img src="../img/6.jpeg" class="img-fluid " alt="...">
+</picture>
+	<div class="a ">
 		<form action="controle-cliente.php" method="post" accept-charset="utf-8">
 			<p><strong>Dados do cliente</strong></p>
 			<label>
-				Nome:
+				Nome do cliente:
 				<br>
-				<input type="text"  class="form-control" name="nome" value="">
+				<input type="text"  class="form-control  input" name="nome" value="">
 			</label>
 			<br>	
 			<label>
-				Valor do pagamento:
+				Valor cobrado do projeto(R$):
 				<br>
-				<input type="number"  class="form-control" name="valor_pagamento" value="">
+				<input type="number"  class="form-control input" name="valor_pagamento" value="">
 			</label>
 			<br>
 			<label>
 				Descrição do produto:
 				<br>
-				<input type="text"  class="form-control" name="descricao_produto" value="">
+				<textarea class="form-control  input" name="descricao_curso" value=""  rows="3" cols="60" placeholder="Site dinamico"></textarea>
 			</label>
+
 			<br>
 			<label>
-				Horas trabalhadas: 
+				Horas trabalhadas no projeto: 
 				<br>
-				<input type="number"  class="form-control" name="horas_trabalho" value="">
+				<input type="time"  class="form-control col-form-label input" name="horas_trabalho" value="">
 			</label>
 			<br>
 
-			<button type="submit" class="btn btn-primary">Enviar</button>
+			<button type="submit" class="btn btn-primary botao-cliente">Enviar</button>
+			<a href="../php/index.php" class="btn btn-primary botao-cliente" role="button">Voltar</a>
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary botao-cliente" data-toggle="modal" data-target="#exampleModal">
+				Tabela cliente
+			</button>
 
 		</form>
 
-		<div>
+		<div class="b">
 			<?php require_once("tabela-cliente.php"); ?>
 		</div>
 	</div>

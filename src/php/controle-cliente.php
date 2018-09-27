@@ -13,10 +13,10 @@ require_once("conecta.php");
 
     if(mysqli_insert_id($conexao)){
         $_SESSION['msg'] = "Informações enviadas com sucesso";
-        header("Location: index.php");
+        header("Location: formulario-cliente.php");
     }else{
         $_SESSION['msg'] = "Informações não foram enviadas :(";
-        header("Location: index.php");
+        header("Location: formulario-cliente.php");
     }
 
 

@@ -1,4 +1,4 @@
-$('#filtrar-tabela').('keyup click change',function(){
+$('#filtrar-tabela').bind('keyup click change',function(){
     search = $(this).val().toLowerCase();
     var re = new RegExp(search, 'g');
 

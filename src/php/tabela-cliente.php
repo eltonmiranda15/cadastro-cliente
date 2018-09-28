@@ -5,7 +5,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Informações do cliente 'nome do cliente'</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Lista de clientes</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -13,7 +13,7 @@
 			<div class="modal-body">
 				<label>
 					Filtre:
-					<input type="text" name="" value="" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+					<input type="text" name="" value="" id="filtrar-tabela" placeholder="Ex:Elton">
 				</label>
 				<table class="table table-hover"  id="tabela">
 

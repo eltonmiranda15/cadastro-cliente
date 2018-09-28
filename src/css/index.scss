@@ -1,78 +1,161 @@
 body { 
-        background-color:  rgb(24, 14, 12);
+background-color:  rgb(24, 14, 12);
 }
 
+@media only screen and (min-width:998px){ 
 .a {
-  
-    padding: 10px;
-    position: absolute;
-    margin-left: 200px;
-    margin-top: -670px;
-    color: white;
+
+padding: 10px;
+position: absolute;
+margin-left: 200px;
+margin-top: -670px;
+color: white;
+
+}
+}
+.a {
+
+color: white;
+
 }
 
 .b {
-	color: black;
+color: black;
 }
 
 p>strong {
-	font-size:30px;
+font-size:30px;
+}
+
+
+@media only screen and (min-width:1198px){
+.background-image-um {
+background: url(../img/6.jpeg) no-repeat;
+column-count: 2;
+column-gap: 0px;
+padding: 123px;
+height: 667px; //mudar isso
+}
 }
 
 .background-image-um {
-	background: url(../img/6.jpeg) no-repeat;
-    column-count: 2;
-    column-gap: 0px;
-        padding: 123px;
+background: url(../img/6.jpeg) no-repeat;
 }
 
+
 .background-image-dois {
-	//background-image: url(../img/2.jpg);
+//background-image: url(../img/2.jpg);
 }
 
 
 .paragrafo {
-	//padding: 15px 585px 66px 83px;
-	color: white;
+
+color: white;
+padding: 49px;
+
+text-align: center;
+
+}
+
+@media only screen and (max-width:998px){
+.img-fluid {
+display: none;
+}
+
+
 }
 
 .img-fluid {
-	    opacity: 0.4;
+opacity: 0.4;
 }
 
 .input {
-	    width: 350px;
+width: 350px;
 }
 
-.botao-curso {
-	    width: 232.3px;
+@media only screen and (min-width:900px){
+.botao-curso-enviar {
+position: absolute;
+
+}
+}
+.botao-curso-enviar {
+position: absolute;
+right: 14px;
 }
 
-.botao-cliente {
-	width: 114px;
+.botao-curso-voltar {
+
 }
 
-.textarea {
-	width: 703px;
+@media only screen and (min-width:1024px){
+.botao-curso-tabela {
+ top: 0;
 }
+
+
+}
+.botao-curso-tabela {
+    top: 0;
+    position: absolute;
+    right: 20px;
+}
+
+.botao-enviar {
+position: absolute;
+right: 14px;
+width: 114px;
+}
+
+
+.botao-voltar {
+width: 114px;
+}
+
+
+.botao-tabela {
+position: absolute;
+left: 770px;
+bottom: 450px;
+}
+
 
 label {
-	    text-shadow: 0px 0.5px 0.5px;
+text-shadow: 0px 0.5px 0.5px;
 }
 
 .bg{
-	background-color: #00000075;
-	    border-radius: 80px 0px 80px 0px;
-	        padding-bottom: 15px;
+background-color: #00000075;
+border-radius: 80px 0px 80px 0px;
+padding-bottom: 15px;
 }
 
 .titulo {
-	
-     padding: 60px 0px 0px 80px;
-	color: white;
+
+padding: 20px 7px 0px 40px;
+color: white;
 }
 
 .botao-inicial {
-	position: relative;
-    left: 100px;
+position: relative;
+left: 135px;
+}
+
+.modal-content {
+width: 113%;
+}
+
+@media only screen and (min-width:770px ){
+.textarea{
+	width: 703px;
+
+}
+}
+
+.textarea {
+
+}
+
+.bt {
+	    margin-top: 24px;
 }

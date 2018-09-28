@@ -1,97 +1,100 @@
 <?php require_once("cabecalho.php"); ?>
 ​
-<div class="container">
+<div class="container-fluid">
 	<picture>
 		<source srcset="../img/2.jpg" type="image/svg+xml">
-			<img src="../img/2.jpg" class="img-fluid " alt="...">
+			<img src="../img/2.jpg" class="img-fluid img-responsive" alt="...">
 		</picture>
-		<div class="a ">
+		<div class="a row ">
+			<div class="col col-sm-12 col-md-12  col-lg-12  col-xl-12  col-xs-12">
+				
 
-			<form action="controle-curso.php" method="post" accept-charset="utf-8">
-				<p><strong>Dados do curso</strong></p>
-				<label>
-					Nome do curso:
+
+				<form action="controle-curso.php" method="post" accept-charset="utf-8">
+					<p><strong>Dados do curso</strong></p>
+					<label>
+						Nome do curso:
+						<br>
+						<input type="text" class="form-control input" name="nome_curso" value="" placeholder="WordPress">
+
+					</label>			
+
+					<label>
+						Dificuldade do curso:
+						<br>
+						<select class="form-control input" id="">
+							<option>Aluno</option>
+							<option>Genin</option>
+							<option>Chunin</option>
+							<option>Jounin</option>
+							<option>Hogake</option>
+						</select>
+
+					</label>
+
 					<br>
-					<input type="text" class="form-control input" name="nome_curso" value="" placeholder="WordPress">
+					<label>
+						Descrição do curso:
+						<br>
+						<textarea class="form-control  textarea" name="descricao_curso" value=""  rows="3" cols="60" placeholder="Site dinamico"></textarea>
 
-				</label>			
-
-				<label>
-					Dificuldade do curso:
+					</label>
 					<br>
-					<select class="form-control input" id="">
-						<option>Aluno</option>
-						<option>Genin</option>
-						<option>Chunin</option>
-						<option>Jounin</option>
-						<option>Hogake</option>
-					</select>
+					<label>
+						Projetos baseados no curso:
+						<br>
+						<input type="text" class="form-control input" name="projetos_curso" value="" placeholder="Site cabeleireiro">
 
-				</label>
+					</label>
 
-				<br>
-				<label>
-					Descrição do curso:
+					<label>
+						Projeto finalizado com o tema do curso:
+						<br>
+						<input type="text" class="form-control input" name="projeto_finalizado" value="" placeholder="Site cadastro">
+
+					</label>
 					<br>
-					<textarea class="form-control  textarea" name="descricao_curso" value=""  rows="3" cols="60" placeholder="Site dinamico"></textarea>
+					<label>
+						Projeto em andamento com o tema do curso:
+						<br>
+						<input type="text"  class="form-control input" name="projeto_concluido" value="" placeholder="Loja online">
 
-				</label>
-				<br>
-				<label>
-					Projetos baseados no curso:
+					</label>
+
+					<label >
+						Projeto concluido com o tema do curso:
+						<br>
+						<input type="text"  class="form-control input" name="projeto_andamento" value="" placeholder="Site de assinatura">
+
+					</label>
 					<br>
-					<input type="text" class="form-control input" name="projetos_curso" value="" placeholder="Site cabeleireiro">
+					<label class="">
+						Data e hora de inicio:
+						<br>
+						<input type="datetime-local"  class="form-control input" name="data_hora_inicio" value="" placeholder="2011-08-19T13:45:00">
 
-				</label>
+					</label>
 
-				<label>
-					Projeto finalizado com o tema do curso:
+					<label class="">
+						Data e hora de finalização: 
+						<br>
+						<input type="datetime-local"  class="form-control input" name="data_hora_finalizacao" value="" placeholder="2011-08-19T13:45:00">
+
+					</label>
+
 					<br>
-					<input type="text" class="form-control input" name="projeto_finalizado" value="" placeholder="Site cadastro">
+					<button type="submit" class="btn btn-primary btn-lg botao-curso-enviar">Enviar</button>
+					<a href="../php/index.php" class="btn btn-danger btn-lg botao-curso-voltar" role="button">Voltar</a>
+					<!-- Large modal -->
+					<button type="button" class="btn btn-outline-info botao-curso-tabela" data-toggle="modal" data-target=".bd-example-modal-lg">Tabela de curso</button>
+				</form>
 
-				</label>
-				<br>
-				<label>
-					Projeto em andamento com o tema do curso:
-					<br>
-					<input type="text"  class="form-control input" name="projeto_concluido" value="" placeholder="Loja online">
+				<!-- Assim que enviar os dados será necessario envia-los para uma tabelinha para o controle-curso-->
 
-				</label>
-
-				<label >
-					Projeto concluido com o tema do curso:
-					<br>
-					<input type="text"  class="form-control input" name="projeto_andamento" value="" placeholder="Site de assinatura">
-
-				</label>
-				<br>
-				<label class="">
-					Data e hora de inicio:
-					<br>
-					<input type="datetime-local"  class="form-control input" name="data_hora_inicio" value="" placeholder="2011-08-19T13:45:00">
-
-				</label>
-
-				<label class="">
-					Data e hora de finalização: 
-					<br>
-					<input type="datetime-local"  class="form-control input" name="data_hora_finalizacao" value="" placeholder="2011-08-19T13:45:00">
-
-				</label>
-
-				<br>
-				<button type="submit" class="btn btn-primary botao-curso">Enviar</button>
-				<a href="../php/index.php" class="btn btn-primary botao-curso" role="button">Voltar</a>
-				<!-- Large modal -->
-				<button type="button" class="btn btn-primary botao-curso" data-toggle="modal" data-target=".bd-example-modal-lg">Tabela de curso</button>
-			</form>
-
-			<!-- Assim que enviar os dados será necessario envia-los para uma tabelinha para o controle-curso-->
-
-			<div class="b">
-				<?php require_once("tabela-curso.php"); ?>
+				<div class="b">
+					<?php require_once("tabela-curso.php"); ?>
+				</div>
 			</div>
-
 		</div>
 	</div>
 

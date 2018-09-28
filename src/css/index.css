@@ -2,11 +2,16 @@ body {
   background-color: #180e0c;
 }
 
+@media only screen and (min-width: 998px) {
+  .a {
+    padding: 10px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -670px;
+    color: white;
+  }
+}
 .a {
-  padding: 10px;
-  position: absolute;
-  margin-left: 200px;
-  margin-top: -670px;
   color: white;
 }
 
@@ -18,17 +23,30 @@ p > strong {
   font-size: 30px;
 }
 
+@media only screen and (min-width: 1198px) {
+  .background-image-um {
+    background: url(../img/6.jpeg) no-repeat;
+    column-count: 2;
+    column-gap: 0px;
+    padding: 123px;
+    height: 667px;
+  }
+}
 .background-image-um {
   background: url(../img/6.jpeg) no-repeat;
-  column-count: 2;
-  column-gap: 0px;
-  padding: 123px;
 }
 
 .paragrafo {
   color: white;
+  padding: 49px;
+  text-align: center;
 }
 
+@media only screen and (max-width: 998px) {
+  .img-fluid {
+    display: none;
+  }
+}
 .img-fluid {
   opacity: 0.4;
 }
@@ -37,16 +55,41 @@ p > strong {
   width: 350px;
 }
 
-.botao-curso {
-  width: 232.3px;
+@media only screen and (min-width: 900px) {
+  .botao-curso-enviar {
+    position: absolute;
+  }
+}
+.botao-curso-enviar {
+  position: absolute;
+  right: 14px;
 }
 
-.botao-cliente {
+@media only screen and (min-width: 1024px) {
+  .botao-curso-tabela {
+    top: 0;
+  }
+}
+.botao-curso-tabela {
+  top: 0;
+  position: absolute;
+  right: 20px;
+}
+
+.botao-enviar {
+  position: absolute;
+  right: 14px;
   width: 114px;
 }
 
-.textarea {
-  width: 703px;
+.botao-voltar {
+  width: 114px;
+}
+
+.botao-tabela {
+  position: absolute;
+  left: 770px;
+  bottom: 450px;
 }
 
 label {
@@ -60,13 +103,26 @@ label {
 }
 
 .titulo {
-  padding: 60px 0px 0px 80px;
+  padding: 20px 7px 0px 40px;
   color: white;
 }
 
 .botao-inicial {
   position: relative;
-  left: 100px;
+  left: 135px;
+}
+
+.modal-content {
+  width: 113%;
+}
+
+@media only screen and (min-width: 770px) {
+  .textarea {
+    width: 703px;
+  }
+}
+.bt {
+  margin-top: 24px;
 }
 
 /*# sourceMappingURL=index.css.map */

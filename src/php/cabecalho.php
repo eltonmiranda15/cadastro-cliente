@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once("conecta.php"); 
 
 $consulta1 = "select * from dados_cliente"; 

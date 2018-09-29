@@ -41,6 +41,7 @@
 					</button>
 					<button type="submit" class="btn btn-primary btn-lg botao-enviar">Enviar</button>
 					<a href="../php/index.php" class="btn btn-danger btn-lg botao-voltar" role="button">Voltar</a>
+					<div><?=$_SESSION['msg']?></div>
 					<!-- Button trigger modal -->
 
 

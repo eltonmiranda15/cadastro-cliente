@@ -1,0 +1,177 @@
+﻿Aninhamento no .itens-plano
+ .itens-plano, que está assim:
+
+.itens-plano {
+  padding-left: 1.2em;
+}
+
+.itens-plano li {
+  font-size: 1em;
+  list-style: none;
+  border-bottom: 1px solid #acacac;
+  padding: 5em;
+  width: 14.8em;
+}
+
+.itens-plano li:last-child {
+  border:0;
+}
+
+.itens-plano span {
+  float: right;
+}
+
+
+Aninhando o li, o li:last-child e o span:
+.itens-plano {
+  padding-left: 1.2em;
+  li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    padding: 5em;
+    width: 14.8em;
+  }
+
+  li:last-child {
+    border:0;
+  }
+
+  span {
+    float: right;
+  }
+}
+
+
+Nota-se que o li:last-child está sempre atrelado a li. Então, podemos colocar um dentro do outro.
+.itens-plano {
+  padding-left: 1.2em;
+  li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    padding: 5em;
+    width: 14.8em;
+
+    li:last-child {
+      border:0;
+    }
+  }
+
+  span {
+    float: right;
+  }
+}
+Entretanto, essa sintaxe gera redundância no código do arquivo compilado:
+.itens-plano {
+  padding-left: 1.2em;
+  .itens-plano li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    padding: 5em;
+    width: 14.8em;
+
+    .itens-plano li li:last-child {
+      border:0;}
+  }
+...
+}
+Para evitar essa repetição, devemos usar o &:
+.itens-plano {
+  padding-left: 1.2em;
+  li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    padding: 5em;
+    width: 14.8em;
+
+    &:last-child {
+      border:0;
+    }
+  }
+...
+}
+E esse código compilado no .css fica assim:
+.itens-plano {
+  padding-left: 1.2em;
+  .itens-plano li {
+    font-size: 1em;
+    list-style: none;
+    border-bottom: 1px solid #acacac;
+    padding: 5em;
+    width: 14.8em;
+
+    //ao usar o & o 'li' não é repetido pq //ele entende que o last-child faz parte //dele
+    .itens-plano li:last-child {
+      border:0;}
+  }
+...
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ele fica sem o .scss ou .css
+@import 'nomearquivo'
+
+
+
+//Cor mais escura - pode ser sem o % tb
+$cor-padrao: darken(#cor, 20%);
+//Cor mais clara
+$cor-padrao: lighten(#cor, 20%);
+
+
+PLACEHOLDER -> Evita repetições
+//Extend e Placeholder
+.placeholder -> junta as classes em uma só, exemplo: .destaque button, .plano button, .contato button {}
+%nomeplaceholder {
+	dados que se repetem
+}
+@extend %nomeplaceholder;
+-> o placeholder não abriga valores como o mixin
+
+EXEMPLO DE PLACEHOLDER
+
+E se reformularmos nosso exemplo, só que dessa vez utilizando o placeholder?
+
+%center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  @extend %center;
+}
+
+.image-cover {
+  @extend %center;
+}
+Agora, esse é o CSS gerado:
+
+.container, .image-cover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//tirando comentarios do compass
+->descomentar linha no config.rb
+
+
+media queries
+

@@ -11,6 +11,7 @@ $('#filtrar-tabela').bind('keyup click change',function(){
     });
 });
 
+
 //bind é um vinculador, ele anexa um manipulador para um evento para os elementos
 //keyup -  O evento keyup é acionado quando uma tecla é liberada.
 //change - Bind um manipulador de eventos para o evento "mudança/change" JavaScript, ou acionar esse evento em um elemento.
